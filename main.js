@@ -6,8 +6,8 @@ module.exports = (res)=>{
             res.end(JSON.stringify(data.rows))                                
         }
         else{                                                            
-            res.writeHead(200,{ "Content-Type": "text/html" , "Access-Control-Allow-Origin": "*" })
+            res.writeHead(200,{ "Content-Type": "text/html" ,"Access-Control-Allow-Origin": "*"  })
             res.end(` <h1> There is an Error!! : ${err} </h1>`)                                  
         }            
-    })                   
+    })   
 }
